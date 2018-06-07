@@ -1,4 +1,4 @@
-# html_example_bootstrap
+# storage_example_JS-JQuery-JSON
 This is an example of an interface to create a game bracket (in this case, soccer).
 The interface allows users to save a custom made bracket with drag and drop features using LocalStorage.
 The brackets are not stored in JSON; however initial bracket is populated using AJAX.
