@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<!-- Required Meta Tags -->
+	<meta charset="utf-8">
+	<!-- CSS Linking -->
+	<link rel="stylesheet" href="css\app.css">
+	<link rel="stylesheet" href="jquery-ui-1.12.1.custom\jquery-ui.min.css">
+ 
+	<title>Project-2</title>
+</head>
+<body>
+	<main>
+		<section class="bracket">
+			<div id="pools">
+				<div id="pool-a">
+					<h4>Pool-A</h4>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="pool-b">
+					<h4>Pool-B</h4>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="pool-c">
+					<h4>Pool-C</h4>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="pool-d">
+					<h4>Pool-D</h4>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="pool-e">
+					<h4>Pool-E</h4>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="pool-f">
+					<h4>Pool-F</h4>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="pool-g">
+					<h4>Pool-G</h4>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="pool-h">
+					<h4>Pool-H</h4>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<div id="knockoutStage">
+				<aside id="userInfo">
+					<form id="loginInfo">
+						<ul>
+							<li>
+								<label for="username">User Name: </label>
+								<input type="email" name="username" id="username" required placeholder="Enter Email Address">
+							</li>
+							<li>
+								<label for="password">Password: </label>
+								<input type="password" name="password" id="password" required placeholder="Enter Password">
+							</li>
+							<li id="loginButtons">
+								<button type="submit" value="login" id="login">Login</button>
+								<button type="submit" value="new-user" id="new-user">New User</button>
+								<button type="submit" value="logout" disabled id="logout" formnovalidate>Logout</button>
+							</li>
+						</ul>
+					</form>
+					<form id="saveLoadReset">
+						<button type="button" id="saveBracket" disabled onclick="saveBracketData()">Save</button>
+						<button type="button" id="loadBracket" disabled onclick="loadBracketData()">Load</button>
+						<button type="button" id="resetBracket" onclick="resetBracketData()">Reset</button>
+					</form>
+				</aside>
+				<aside id="winners">
+					<div id="first-Place">
+						<p class="teamName"></p>
+						<h4>1</h4>
+					</div>
+					<div id="second-Place">
+						<p class="teamName"></p>
+						<h4>2</h4>
+					</div>
+					<div id="third-Place">
+						<p class="teamName"></p>
+						<h4>3</h4>
+					</div>
+				</aside>
+				<div id="eighths">
+					<div class="border-left">
+						<h4>First-Round</h4>
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+					<div class="border-left">
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+					<div class="border-left">
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+					<div class="border-left">
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+				</div>
+				<div id="quarters">
+					<div class="border-left">
+						<h4>Quarter-Finals</h4>
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+					<div class="border-left">
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+				</div>
+				<div id="semiFinals">
+					<div class="border-left">
+						<h4>Semi-Finals</h4>
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+				</div>
+				<div id="finals">
+					<div id="first-Place-Game" class="border-center">
+						<h4>First-Place</h4>
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+					<div id="third-Place-Game" class="border-center">
+						<h4>Third-Place</h4>
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+				</div>
+				<div id="semiFinals">
+					<div class="border-right">
+						<h4>Semi-Finals</h4>
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+				</div>
+				<div id="quarters">
+					<div class="border-right">
+						<h4>Quarter-Finals</h4>
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+					<div class="border-right">
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+				</div>
+				<div id="eighths">
+					<div class="border-right">
+						<h4>First-Round</h4>
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+					<div class="border-right">
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+					<div class="border-right">
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+					<div class="border-right">
+						<p class="teamName"></p>
+						<div class="dateTime">
+							<time class="date">testdate</time>
+							<time class="time">testtime</time>
+						</div>
+						<p class="teamName"></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+<!--*********************************************************************************-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+	<script src="scripts\app.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+{
+	"gameData": {
+		"eighths": {
+			"game1": {
+				"date" : "2018-01-01",
+				"time" : "13:01"
+			},
+			"game2": {
+				"date" : "2018-01-02",
+				"time" : "13:02"
+			},
+			"game3": {
+				"date" : "2018-01-03",
+				"time" : "13:03"
+			},
+			"game4": {
+				"date" : "2018-01-04",
+				"time" : "13:04"
+			},
+			"game5": {
+				"date" : "2018-01-05",
+				"time" : "13:05"
+			},
+			"game6": {
+				"date" : "2018-01-06",
+				"time" : "13:06"
+			},
+			"game7": {
+				"date" : "2018-01-07",
+				"time" : "13:07"
+			},
+			"game8": {
+				"date" : "2018-01-08",
+				"time" : "13:08"
+			}
+		},
+		"quarters": {
+			"game1": {
+				"date" : "2018-01-09",
+				"time" : "13:09"
+			},
+			"game2": {
+				"date" : "2018-01-10",
+				"time" : "13:10"
+			},
+			"game3": {
+				"date" : "2018-01-11",
+				"time" : "13:11"
+			},
+			"game4": {
+				"date" : "2018-01-12",
+				"time" : "13:12"
+			}
+		},
+		"semiFinals": {
+			"game1": {
+				"date" : "2018-01-13",
+				"time" : "13:13"
+			},
+			"game2": {
+				"date" : "2018-01-14",
+				"time" : "13:14"
+			}
+		},
+		"finals": {
+			"game1": {
+				"date" : "2018-01-15",
+				"time" : "13:15"
+			},
+			"game2": {
+				"date" : "2018-01-16",
+				"time" : "13:16"
+			}
+		}
+	},
+
+	"pools": {
+		"a": {
+			"rank1": "Russia",
+			"rank2": "Saudi Arabia",
+			"rank3": "Egypt",
+			"rank4": "Uruguay"
+		},
+
+		"b": {
+			"rank1": "Portugal",
+			"rank2": "Spain",
+			"rank3": "Morocco",
+			"rank4": "Iran"
+		},
+
+		"c": {
+			"rank1": "France",
+			"rank2": "Australia",
+			"rank3": "Peru",
+			"rank4": "Denmark"
+		},
+
+		"d": {
+			"rank1": "Argentina",
+			"rank2": "Iceland",
+			"rank3": "Croatia",
+			"rank4": "Nigeria"
+		},
+
+		"e": {
+			"rank1": "Brazil",
+			"rank2": "Switzerland",
+			"rank3": "Costa Rica",
+			"rank4": "Serbia"
+		},
+
+		"f": {
+			"rank1": "Germany",
+			"rank2": "Mexico",
+			"rank3": "Sweden",
+			"rank4": "Korea Rep"
+		},
+
+		"g": {
+			"rank1": "Belgium",
+			"rank2": "Panama",
+			"rank3": "Tunisia",
+			"rank4": "England"
+		},
+
+		"h": {
+			"rank1": "Poland",
+			"rank2": "Senegal",
+			"rank3": "Colombia",
+			"rank4": "Japan"
+		}
+	}
+}
